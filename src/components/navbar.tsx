@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo from "../icons/logo.tsx";
 import useMediaQuery from "../utils/useMediaQuery.ts";
 import { motion } from "framer-motion";
 
@@ -7,29 +6,30 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle =
+    "text-xl leading-6 font-jost text-primary-200 hover:text-[#7e0000]";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
+    <div className="max-w-[1200px] px-0 xl:px-10 m-auto w-full py-0 flex justify-between items-center"> 
       <a href="/">
         {" "}
-        <Logo />
+        <img src="public/logo-tentacion.png" className="w-40 lg:w-80 h-30 bg-center bg-cover" />
       </a>
 
       {/* Nav List for Desktop */}
       {matches && (
         <nav className="flex flex-row gap-6">
           <a href="/" className={linkStyle}>
-            Home
-          </a>
-          <a href="/about" className={linkStyle}>
-            About Us
+            Inicio
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Lencería
+          </a>
+          <a href="/about" className={linkStyle}>
+            Bikinis
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Disfraces
           </a>
         </nav>
       )}
@@ -37,7 +37,7 @@ const Navbar = () => {
       {!matches && (
         <div
           onClick={() => setToggled(!toggled)}
-          className="space-y-1 cursor-pointer"
+          className="space-y-1 cursor-pointer px-10"
         >
           <motion.span
             animate={{ rotateZ: toggled ? 45 : 0, y: toggled ? 8 : 0 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
             animate={{
               rotateZ: toggled ? -45 : 0,
               y: toggled ? -8 : 0,
-              width: toggled ? 32 : 16,
+              width: toggled ? 32 : 16
             }}
             className="block h-0.5 w-4 bg-black"
           ></motion.span>
@@ -62,19 +62,19 @@ const Navbar = () => {
         <motion.nav
           initial={{ opacity: 0, x: 25 }}
           animate={{ opacity: 1, x: 0 }}
-          className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
+          className="flex flex-col fixed h-screen bg-white w-[80%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Inicio
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Bikinis
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Lencería
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+          Disfraces
           </a>
         </motion.nav>
       )}

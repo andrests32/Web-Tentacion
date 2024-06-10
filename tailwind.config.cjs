@@ -7,11 +7,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        hero: "url('/banner.png')",
+        body: "url(public/bg-beso-principal.png)",
+        hero: "url('')",
         main: "url('/Background.jpg')",
-        about: "url('/aboutpage-bg.png')",
-        services: "url('/servicespage-bg.jpg')",
-        contact: "url('/contactpage-bg.jpg')",
+        about: "url('public/Banner-Bikini.jpg')",
+        services: "url('public/Banner-Lenceria.jpg')",
+        contact: "url('public/Banner-Disfraces.jpg')",
+          "gray-200": "#4D5053",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
@@ -20,7 +22,7 @@ module.exports = {
       colors: {
         // Configure your color palette here
         primary: {
-          100: "#CDA274",
+          100: "#F4B4DA",
           200: "#292F36",
           300: "#F4F0EC",
           400: "#E2E2E2",
@@ -36,6 +38,7 @@ module.exports = {
     },
   },
   plugins: [
+    require("tailwind-gradient-mask-image"),
     plugin(function ({ addUtilities }) {
       addUtilities({
         ".center": {

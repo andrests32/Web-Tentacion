@@ -1,48 +1,224 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import ContactInfo from '../components/contact-box.tsx'
-import ContactForm from '../components/contact-form.tsx'
+import MainLayout from "../layouts/main-layout.astro";
+import { LuShoppingCart } from "react-icons/lu";
+
+
+const services = [
+  {
+    img: "public/Disfraces/1.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/2.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/3.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/4.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/5.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/6.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/7.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/8.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/9.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/10.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/11.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/12.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+
+  {
+    img: "public/Disfraces/13.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "12.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  }
+];
 ---
 
-
-<MainLayout title = 'Interior Design Contact Us'>
-
+<MainLayout title="Disfraces">
   <!-- Banner Section -->
 
-  <section class="w-full bg-contact h-[50vh] flex justify-center items-end">
-    <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-      <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">Contact Us</h1>
-      <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"> <a href="/">Home</a> / Contact</p>
+  <section
+    class="w-full bg-contact bg-start bg-cover h-[50vh] flex justify-center items-end"
+  >
+    <div
+      class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white/70 rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+    >
+      <h1
+        class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-[#7e0000]"
+      >
+        Disfraces
+      </h1>
     </div>
   </section>
 
-  <!-- Intro Section -->
+  <!-- Services Section -->
 
-	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px]">
-		<h2 class="text-[30px] text-center capitalize font-dm tracking-wide lg:max-w-[60%] leading-8 md:leading-[62.50px] md:text-[50px] mx-auto text-text-blue ">We love meeting new people and helping them.</h2>
+  <!-- <section
+    class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-5 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[100px] justify-between"
+  >
+    {
+      services.map((service) => {
+        return (
+          <div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] hover:bg-primary-100/50 bg-[#7e0000]/5 px-5 py-[40px] flex-col justify-center items-center gap-3 md:gap-5">
+            <img src={service.img} class="rounded-xl" />
+            <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+              {service.title}
+            </h3>
+            <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">
+              {" "}
+              {service.text}
+            </p>
+          </div>
+        );
+      })
+    }
+  </section> -->
 
-    <!-- main section -->
-    <div class="grid grid-cols-1 gap-[55px] pt-20 lg:grid-cols-3 place-content-center">
-      <ContactInfo />
-      <ContactForm />
-    </div>
-	</section>
+  <section
+   class="lg:max-w-[1200px] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-5 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[100px] justify-between"
+  >
+    {
+      services.map((service) => {
+        return (
+          <div class="w-[150px] lg:w-full md:w-full col-span-1 max-w-[358px] mx-auto flex rounded-md  hover:bg-[#7e0000]/10 px-1 lg:px-2 py-2 bg-[#f6ebdd]/20   flex-col justify-center items-center gap-2 md:gap-5">
+            <div>
+              <img
+                src={service.img}
+                class="rounded-md object-cover object-center"
+              />
+            </div>
+            {/* <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+              {service.title}
+            </h3> */}
 
- 
+            <p class="md:text-[22px] tracking-tight font-jost text-[#7e0000] leading-[33px] text-center  rounded-full px-3 flex gap-2 font-semibold items-center">
+              {" "}
+              <img
+                src={service.priceIco}
+                class="object-contain object-center w-6 h-6"
+              />
+              {service.price}
+            </p>
 
+            <p class="md:text-[22px] tracking-tight leading-[33px] text-center rounded-xl px-3 text-text-blue font-jost">
+              {" "}
+              {service.text}
+            </p>
+
+            <p class="flex items-center gap-4 hover:bg-white p-2 rounded-xl">
+              <LuShoppingCart className="text-[#7e0000] text-2xl" />
+              <a
+                href={service.link}
+                class="font-jost text-xl font-medium text-text-blue"
+              >
+                Comprar
+              </a>
+            </p>
+          </div>
+        );
+      })
+    }
+  </section>
 </MainLayout>
 
 <style>
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>

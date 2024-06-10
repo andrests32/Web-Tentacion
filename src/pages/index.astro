@@ -1,242 +1,315 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import Button from '../components/button.tsx'
-import ArrowSec from '../icons/arrow-sec.tsx'
-import CallIcon from "../icons/call.tsx"
-import Experience from '../components/experience.tsx'
-
-
-const services = [
-	{
-		title: 'Project Plan',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Interior Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Realization',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-]
+import MainLayout from "../layouts/main-layout.astro";
+// import Button from "../components/button.tsx";
+import ButtonLenceria from "../components/buttonLenceria";
+import ButtonBikinis from "../components/ButtonBikinis";
+import ButtonDis from "../components/buttonDisfraces.tsx";
+import { CgChevronLeft } from "react-icons/cg";
+import { CgChevronRight } from "react-icons/cg";
+import { FaInstagram } from "react-icons/fa";
+import Siguenos from "../components/buttonSiguenos";
+import Button from "../components/button";
 
 const reviews = [
-	{
-		img: '/natasha.png',
-		name: 'Nattasha Mith',
-		location: 'Sydney, USA',
-		review: 'Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.'
-	},
-	{
-		img: '/benny.png',
-		name: 'Benny Roll',
-		location: 'Sydney, New York',
-		review: 'Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.'
-	},
-	{
-		img: '/raymond.png',
-		name: 'Raymond Galario',
-		location: 'Sydney, Australia',
-		review: 'Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.'
-	},
-]
+  {
+    img: "src/icons/ico-lenceria.png",
+    name: "Nattasha Mith",
+    review:
+      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+  }
+];
 
-const projects = [
-	{
-		img: '/project1.png',
-		name: 'Modern Kitchen',
-		text: 'Decor / Artchitecture'
-	},
-	{
-		img: '/project2.png',
-		name: 'Modern Bedroom',
-		text: 'Decor / Artchitecture'
-	},
-	{
-		img: '/project3.png',
-		name: 'Modern Dining Hall',
-		text: 'Decor / Artchitecture'
-	},
-	{
-		img: '/project4.png',
-		name: 'Modern Living Room',
-		text: 'Decor / Artchitecture'
-	},
-]
+const bikini = [
+  {
+    img: "src/icons/ico-Bikinis.png",
+    name: "Nattasha Mith",
+    review:
+      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+  }
+];
+
+const disfraces = [
+  {
+    img: "src/icons/ico-disfraces.png",
+    name: "Nattasha Mith",
+    review:
+      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+  }
+];
 
 const clientLogos = [
-	{
-		img: '/clientLogo1.svg',
-	},
-	{
-		img: '/clientLogo2.svg',
-	},
-	{
-		img: '/clientLogo3.svg',
-	},
-	{
-		img: '/clientLogo4.svg',
-	},
-	{
-		img: '/clientLogo5.svg',
-	},
-]
-
-const experiences = [
-	{
-		num: 12,
-		text:'Years Of Experiance'
-	},
-	{
-		num: 85,
-		text:'Success Project'
-	},
-	{
-		num: 15,
-		text:'Active Project'
-	},
-	{
-		num: 95,
-		text:'Happy Customers'
-	},
-]
-
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.07 (1).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.07 (3).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.07 (4).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.07 (5).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (1).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (2).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (3).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (4).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (5).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (6).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08 (7).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.08.jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09 (1).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09 (3).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09 (4).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09 (5).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09 (6).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.09.jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10 (1).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10 (2).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10 (3).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10 (4).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10 (5).jpeg"
+  },
+  {
+    img: "public/Promos/WhatsApp Image 2024-05-29 at 11.50.10.jpeg"
+  }
+];
 ---
 
-<MainLayout title = 'Interior Design Home'>
+<MainLayout title="Tentacion">
+  <!-- About Section -->
 
-	<!-- Banner -->
-	
-	<section class="w-full bg-hero bg-no-repeat bg-cover h-screen lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
-		<div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
-			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200"> Let Your Home Be Unique </h1>
-			<p class="text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[50%]">There are many variations of the passages of lorem Ipsum fromavailable,variations of the passages.</p>
-			<Button text="Get Started"/>
-		</div>
-	</section>
+  <figure
+    class="w-full lg:min-h-[110vh] flex items-center justify-center box-border"
+  >
+    <video muted autoplay loop width="1920" height="1080" class="object-cover">
+      <source src="public/Ne-videoBanner.mp42.mp4" type="video/mp4" />
+    </video>
+  </figure>
 
-	<!-- Services Section -->
+  <Button />
+  <!-- What People Think About Us Section -->
 
-	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-		{
-			services.map((service) => {
-				return (
-					<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
-						<h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{service.title}</h3>
-						<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text}</p>
-						<a href="/services" class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter">Read More <ArrowSec /></a>
-					</div>
-				)
-			})
-		}
-	</section>
+  <h2
+    class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[20px] lg:text-[60px] w-full lg:max-w-[50%] pb-9 mx-auto text-text-blue lg:pt-[100px] pt-10 flex flex-col items-center justify-center"
+  >
+    Ponte feliz, porque regia ya estas.
+    <img
+      src="public/logo-only.png"
+      class="w-60 h-30 lg:w-[380px] lg:h-30 lg:bg-cover"
+    />
+  </h2>
 
-	<!-- About Section -->
+  <section
+    class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto lg:pt-[20px] lg:flex rounded-xl mb-10 lg:mb-20"
+  >
+    <div
+      class="w-full flex flex-col rounded-[48px] px-6 py-[40px] justify-center items-center"
+    >
+      <h2
+        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[50px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto text-text-blue"
+      >
+        Lencería
+      </h2>
+      <div class="flex flex-col gap-8 lg:gap-10 lg:flex-row">
+        {
+          reviews.map((rev) => {
+            return (
+              <div class="w-full max-w-[370px] rounded-4xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
+                <div class="flex flex-col sm:flex-row gap-6 items-center">
+                  <img
+                    src={rev.img}
+                    alt=""
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+      <div class="flex items-center justify-center pt-10">
+        <ButtonLenceria text="Más Lencería" />
+      </div>
+    </div>
 
-	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
-		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
-			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">We Create The Art Of Stylish Living Stylishly</h2>
-			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using that it has a more-or-less normal.</p>
-			<div class="flex gap-4 pt-3 items-center">
-				<CallIcon/>
-				<p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-					<span class="text-2xl font-bold leading-9 ">012345678</span>
-					<span class="text-[22px] leading-8">Call Us Anytime</span>
-				</p>
-			</div>
-			<Button text="Get Free Estimate"/>
-		</div>
+    <div class="w-full flex flex-col rounded-[48px] px-6 py-[40px]">
+      <h2
+        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[50px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto text-text-blue"
+      >
+        Bikinis
+      </h2>
+      <div class="flex flex-col gap-8 lg:gap-10 lg:flex-row">
+        {
+          bikini.map((rev) => {
+            return (
+              <div class="w-full max-w-[370px] rounded-4xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
+                <div class="flex flex-col sm:flex-row gap-6 items-center">
+                  <img
+                    src={rev.img}
+                    alt=""
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+      <div class="flex items-center justify-center pt-10">
+        <ButtonBikinis text="Más bikinis" />
+      </div>
+    </div>
 
-		<div>
-			<img src="/about-img.png" alt="" />
-		</div>
-	</section>
+    <div class="w-full flex flex-col rounded-[48px] px-6 py-[40px]">
+      <h2
+        class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[50px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto text-text-blue"
+      >
+        Disfraces
+      </h2>
+      <div class="flex flex-col gap-8 lg:gap-10 lg:flex-row">
+        {
+          disfraces.map((rev) => {
+            return (
+              <div class="w-full max-w-[370px] rounded-4xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
+                <div class="flex flex-col sm:flex-row gap-6 items-center">
+                  <img
+                    src={rev.img}
+                    alt=""
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+              </div>
+            );
+          })
+        }
+      </div>
+      <div class="flex items-center justify-center pt-10">
+        <ButtonDis text="Más Disfraces" />
+      </div>
+    </div>
+  </section>
 
-	<!-- What People Think About Us Section -->
+  <section
+    class="w-full bg-[#f6ebdd]/20 h-full lg:min-h-[110vh] px-12 xl:px-40 flex flex-col lg:flex-row items-center justify-evenly mb-10"
+  >
+    <div
+      class="lg:max-w-[800px] w-full mx-auto flex flex-col lg:px-5 py-4 px-4"
+    >
+      <p class="flex items-center gap-4 font-jost text-xl text-[#7e0000]">
+        <FaInstagram className="text-[#7e0000]" />
+        Instagram
+      </p>
 
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-	<div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">What the People Thinks About Us</h2>
-		<div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
-			{
-			reviews.map((rev) => {
-				return (
-					<div class="w-full bg-white max-w-[370px] px-[37px] py-[53px] rounded-3xl mx-auto flex flex-col justify-center gap-4 md:gap-6">
-						<div class="flex flex-col sm:flex-row gap-6 items-center">
-							<img src={rev.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{rev.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{rev.location}</span>
-							</p>
-						</div>
-						<p class="font-jost tracking-tight leading-8 text-base text-center sm:text-left text-text-gray lg:text-[22px]">{rev.review}</p>
-					</div>
-			)
-		})
-		}
-		</div>
-	</div>
-	</section>
+      <p
+        class="text-[25px] lg:text-[30px] leading-[50px] md:text-[60px] xl:text-[50px] pb-4 font-dm md:leading-[75.25px] w-full xl:max-w-[50%] text-text-blue"
+      >
+        Síguenos en Instagram @tentacion.moda.intima
+      </p>
 
-	<!-- Client Logo Section -->
+      <p
+        class="font-jost text-[16px] lg:text-[80px] leading-[30px] md:text-[20px] xl:text-[22px] pb-10 w-full xl:max-w-[60%] text-text-blue"
+      >
+        Lenceria, bikinis, disfraces en todas las tallas. Visitanos en nuestras
+        tiendas de Sullana, Piura. Mira nuestro catálogo ¡Y nuestras secciones!
+        Salen  productos con grandes precios. ¡Descuentos!
+      </p>
 
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
-			{
-				clientLogos.map(logo => <img src={logo.img} alt="" />)
-			}
-		</div>
-	</section>
+      <div class="pb-20">
+        <Siguenos text="SÍGUENOS" />
+      </div>
+    </div>
+    <div
+      class="w-[90vw] lg:flex items-center justify-center lg:w-[1000] lg:h-[700] pb-20"
+    >
+      <img
+        src="public/collage.img.jpeg"
+        class="w-full lg:h-[650px] object-cover object-center rounded-md"
+      />
+    </div>
+  </section>
 
-	<!-- Projects Section -->
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">Follow Our Projects</h2>
-		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-[104px] lg:gap-y-[56px] mt-12 lg:mt-[93px]">
-			{
-			projects.map((proj) => {
-				return (
-					<div class="w-full flex flex-col gap-4">
-					<img src={proj.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{proj.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{proj.text}</span>
-							</p>
-					</div>
-			)
-		})
-		}
-		</div>
-	</section>
-
-	<!-- Experience Section -->
-	<section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
-		<div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
-			{
-				experiences.map((exp, i) => {
-					return(
-						<Experience text={exp.text} num={exp.num} i={i} client:load />
-					)
-				})
-			}
-		</div>
-	</section>
+  <section
+    class="lg:max-w-[1300px] lh-100 px-3 xl:px-20 w-full mx-auto pb-[100px] lg:pt-[10px] rounded-xl"
+  >
+    <h2
+      class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] mx-auto text-[#7e0000]"
+    >
+      Conoce nuestros nuevos modelos
+    </h2>
+    <h2
+      class="font-jost tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[20px] lg:text-[30px] w-full lg:max-w-[50%] pb-9 mx-auto text-text-blue lg:pt-[5px] pt-5 flex flex-col items-center justify-center"
+    >
+      Prendas nuevas, No te quedes sin la tuya.
+    </h2>
+    <div
+      class="w-full h-100 flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar rounded-xl"
+    >
+      <CgChevronRight className="absolute text-6xl right-3 text-text-blue/30" />
+      {
+        clientLogos.map((logo) => (
+          <img
+            src={logo.img}
+            alt=""
+            class="object-contain object-center h-80"
+          />
+        ))
+      }
+      <CgChevronLeft className="absolute text-6xl left-1 text-text-blue/30" />
+    </div>
+  </section>
 </MainLayout>
- 
 
 <style>
+  /* .imagen-principal{
+		mask-image: linear-gradient(black 75%, transparent);
+	} */
 
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>

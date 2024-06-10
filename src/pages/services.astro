@@ -1,157 +1,656 @@
 ---
-import MainLayout from '../layouts/main-layout.astro'
-import One from "../icons/one.tsx"
-import Two from "../icons/two.tsx"
-import Three from "../icons/three.tsx"
-import Four from "../icons/four.tsx"
-import ServiceIconOne from "../icons/service1-icon.tsx"
-import ServiceIconTwo from "../icons/service2-icon.tsx"
-import ServiceIconThree from "../icons/service3-icon.tsx"
-import ServiceIconFour from "../icons/service4-icon.tsx"
-
+import MainLayout from "../layouts/main-layout.astro";
+import { LuShoppingCart } from "react-icons/lu";
 
 const services = [
-	{
-		title: 'Project Plan',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Interior Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Realization',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: '2d/3d Art Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Retail design',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-	{
-		title: 'Decoration Work',
-		text: 'There are many variations of the passages of lorem Ipsum from available, majority.'
-	},
-]
-
-const howWeWorkDetails = [
   {
-    imgIcon: ServiceIconOne,
-    numIcon: One,
-    img: '/service1.png',
-    title: 'Concept & Details',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "public/Lenceria/2.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
   },
   {
-    imgIcon: ServiceIconTwo,
-    numIcon: Two,
-    img: '/service2.png',
-    title: 'Idea For Work',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "public/Lenceria/5.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
   },
   {
-    imgIcon: ServiceIconThree,
-    numIcon: Three,
-    img: '/service3.png',
-    title: 'Design',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
   },
   {
-    imgIcon: ServiceIconFour,
-    numIcon: Four,
-    img: '/service4.png',
-    title: 'Perfection',
-    info:'It is a long established fact  will be distracted. Lorem Ipsum is simply dummy from text of the and typesetting indufstry.'
-
+    img: "public/Lenceria/8.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
   },
-]
+  {
+    img: "public/Lenceria/11.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria/14.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.00",
+    link: "https://wa.me/p/25038967815718497/51965793184"
+  },
+  {
+    img: "public/Lenceria/16.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.00",
+    link: "https://wa.me/p/7050051608437674/51965793184"
+  },
+  {
+    img: "public/Lenceria/36.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "80.00",
+    link: "https://wa.me/p/7267645433352559/51965793184"
+  },
+  {
+    img: "public/Lenceria/54.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7246925405395693/51965793184"
+  },
+  {
+    img: "public/Lenceria/57.png",
+    title: "Tallas",
+    text: "M - L - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7574227205961509/51965793184"
+  },
+  {
+    img: "public/Lenceria/63.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7523684661003751/51965793184"
+  },
+  {
+    img: "public/Lenceria/64.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/25724313373834703/51965793184"
+  },
+  {
+    img: "public/Lenceria/65.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "00.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+  {
+    img: "public/Lenceria/66.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "00.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+  {
+    img: "public/Lenceria/67.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7277361935660208/51965793184"
+  },
+  {
+    img: "public/Lenceria/69.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/7633383696695070/51965793184"
+  },
+  {
+    img: "public/Lenceria/70.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/24928549773426804/51965793184"
+  },
+  {
+    img: "public/Lenceria/71.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/7473106986082747/51965793184"
+  },
+  {
+    img: "public/Lenceria/72.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/24876650508649041/51965793184"
+  },
+  {
+    img: "public/Lenceria/73.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/6823464954424137/51965793184"
+  },
+  {
+    img: "public/Lenceria/75.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "00.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+  {
+    img: "public/Lenceria/76.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/7351171938280334/51965793184"
+  },
+  {
+    img: "public/Lenceria/78.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/7282926171791483/51965793184"
+  },
+  {
+    img: "public/Lenceria/79.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/6961057690671932/51965793184"
+  },
+  {
+    img: "public/Lenceria/80.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7339557266128970/51965793184"
+  },
+  {
+    img: "public/Lenceria/85.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "00.00",
+    link: "https://react-icons.github.io/react-icons/search/#q=sol"
+  },
+  {
+    img: "public/Lenceria/88.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/6720789711358750/51965793184"
+  },
+  {
+    img: "public/Lenceria/92.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/6986270334817794/51965793184"
+  },
+  {
+    img: "public/Lenceria/93.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/25326647770282411/51965793184"
+  },
+  {
+    img: "public/Lenceria/94.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/7368008793293969/51965793184"
+  },
+  {
+    img: "public/Lenceria/95.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/7570246213006271/51965793184"
+  },
+  {
+    img: "public/Lenceria/97.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/7007078676070242/51965793184"
+  },
+  {
+    img: "public/Lenceria/99.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/8126347237394405/51965793184"
+  },
+  {
+    img: "public/Lenceria/101.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "80.00",
+    link: "https://wa.me/p/7689995987699420/51965793184"
+  },
+  {
+    img: "public/Lenceria/107.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7272073212842417/51965793184"
+  },
+  {
+    img: "public/Lenceria/111.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.90",
+    link: "https://wa.me/p/8154017301309704/51965793184"
+  },
+  {
+    img: "public/Lenceria/116.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/6553219491376899/51965793184"
+  },
+  {
+    img: "public/Lenceria/122.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "69.00",
+    link: "https://wa.me/p/7213462418730977/51965793184"
+  },
+  {
+    img: "public/Lenceria/124.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/7365295786881658/51965793184"
+  },
+  {
+    img: "public/Lenceria/127.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7749903011688569/51965793184"
+  },
+  {
+    img: "public/Lenceria/131.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "89.90",
+    link: "https://wa.me/p/7380665502024756/51965793184"
+  },
+  {
+    img: "public/Lenceria/155.png",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.90",
+    link: "https://wa.me/p/25115979504682763/51965793184"
+  },
+
+  // Lenceria segundo bloque de imagenes..
+  {
+    img: "public/Lenceria/2.png",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.20 (1).jpeg",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.20.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.21 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.21 (2).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.21 (3).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.21.jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.24 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.24.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.25 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.25.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.26 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.26 (2).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.26 (3).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.26.jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27 (2).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27 (3).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.28.jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.29.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.30 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.30 (2).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.30.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.31.jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.32 (1).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "75.00",
+    link: "https://wa.me/p/7235761763198100/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.32 (2).jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "79.00",
+    link: "https://wa.me/p/7080055378776491/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.32 (3).jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7376847612403658/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.32.jpeg",
+    title: "Tallas",
+    text: "M - L - XL - XXL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "65.00",
+    link: "https://wa.me/p/7024990590940893/51965793184"
+  },
+  {
+    img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.33.jpeg",
+    title: "Tallas",
+    text: "M - L - XL",
+    priceIco: "src/icons/ico.Price.png",
+    price: "74.90",
+    link: "https://wa.me/p/7346814882100249/51965793184"
+  }
+];
 ---
 
-
-<MainLayout title = 'Interior Design Services'>
-
+<MainLayout title="Lencería">
   <!-- Banner Section -->
 
-  <section class="w-full bg-services h-[50vh] flex justify-center items-end">
-    <div class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white rounded-tl-[37px] rounded-tr-[37px] gap-2.5">
-      <h1 class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-primary-200 ">Services</h1>
-      <p class="text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"> <a href="/">Home</a> / Services </p>
+  <section
+    class="w-full bg-services bg-center bg-cover h-[50vh] flex justify-center items-end"
+  >
+    <div
+      class="py-[30px] lg:py-[41px] px-[60px] lg:px-[152px] flex flex-col justify-center items-center bg-white/70 rounded-tl-[37px] rounded-tr-[37px] gap-2.5"
+    >
+      <h1
+        class="text-[30px] leading-[40px] lg:text-[50px] lg:leading-[62px] font-dm capitalize text-[#7e0000]"
+      >
+        Lencería
+      </h1>
     </div>
   </section>
 
-  	<!-- Services Section -->
+  <!-- Services Section -->
 
-	<section class="lg:max-w-[1200px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-		{
-			services.map((service) => {
-				return (
-					<div class="w-full col-span-1 max-w-[358px] mx-auto flex rounded-[30px] hover:bg-primary-300 px-5 py-[83px] flex-col justify-center items-center gap-3 md:gap-5">
-						<h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{service.title}</h3>
-						<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text}</p>
-						
-					</div>
-				)
-			})
-		}
-	</section>
-
-  <!-- How We Work Section -->
-  <section class="px-12 xl:px-0 w-full mt-[100px] lg:mt-[200px] min-h-screen ">
-   <div class="w-full lg:max-w-[1200px] p-12 mx-auto lg:px-[116px] lg:py-[160px] bg-primary-300 rounded-[70px] ">
-     <h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full capitalize lg:max-w-[50%] pb-2 mx-auto">How We Work</h2>
-		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
-
-    <div class="pt-[70px] lg:pt-[100px] flex flex-col gap-[70px] ">
-      <!-- Inner Sections -->
-
-      {
-        howWeWorkDetails.map((detail, index) => {
-          const ImageIcon = detail.imgIcon
-          const NumberIcon = detail.numIcon
-          const className = `flex justify-between flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"} gap-[50px] items-center max-w-[967px]`
-
-          return(
-            <div class={className}>
-              <img src={detail.img} alt=""/>
-              <div class="flex flex-col gap-12 lg:gap-[58px]">
-                <div class="justify-between hidden lg:flex">
-                  <ImageIcon />
-                  <NumberIcon/>
-                </div>
-                <div class="flex flex-col gap-3">
-                  <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{detail.title}</h3>
-                  <p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px]">{detail.info}</p>
-                </div>
-              </div>
+  <section
+    class="lg:max-w-[1200px] grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 lg:gap-y-5 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[100px] justify-between"
+  >
+    {
+      services.map((service) => {
+        return (
+          <div class="w-[150px] lg:w-full md:w-full col-span-1 max-w-[358px] mx-auto flex rounded-md  hover:bg-[#7e0000]/10 px-1 lg:px-2 py-2 bg-[#f6ebdd]/20   flex-col justify-center items-center gap-2 md:gap-5">
+            <div>
+              <img
+                src={service.img}
+                class="rounded-md object-cover object-center"
+              />
             </div>
-          )
-        })
-      }
+            {/* <h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">
+              {service.title}
+            </h3> */}
 
-      <!-- Inner Sections End -->
-    </div>
-   </div>
+            <p class="md:text-[22px] tracking-tight font-jost text-[#7e0000] leading-[33px] text-center  rounded-full px-3 flex gap-2 font-semibold items-center">
+              {" "}
+              <img
+                src={service.priceIco}
+                class="object-contain object-center w-6 h-6"
+              />
+              {service.price}
+            </p>
+
+            <p class="md:text-[22px] tracking-tight leading-[33px] text-center rounded-xl px-3 text-text-blue font-jost">
+              {" "}
+              {service.text}
+            </p>
+
+            <p class="flex items-center gap-4 hover:bg-white p-2 rounded-xl">
+              <LuShoppingCart className="text-[#7e0000] text-2xl" />
+              <a
+                href={service.link}
+                target="about_blank"
+                class="font-jost text-xl font-medium text-text-blue"
+              >
+                Comprar
+              </a>
+            </p>
+          </div>
+        );
+      })
+    }
   </section>
-
 </MainLayout>
 
 <style>
-
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
-      display: none;
+    display: none;
   }
 
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
-
 </style>
