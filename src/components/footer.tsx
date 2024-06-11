@@ -75,38 +75,42 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="col-span-1 md:col-span-2 flex flex-col justify-evenly items-center">
-          <p className="tracking-tight text-base lg:text-[16px] lg:leading-[33px] font-jost text-text-blue pt-[18px] pb-[33px]">
+        <div className="col-span-1 md:col-span-2 flex flex-col justify-evenly items-center lg:mr-20 md:mr-30">
+          <p className="tracking-tight text-base lg:text-[20px] md:text-[18px]  lg:leading-[33px] font-jost text-text-blue pt-[18px] pb-[33px]">
             No se aceptan devoluciones, ya que las prendas son de uso íntimo.
             Somos comprometidos con brindar un servicio de calidad.
           </p>
         </div>
-
-        <div className="flex flex-col gap-5 md:gap-[54px] justify-center items-center">
-          <p className="flex tracking-tight text-base lg:text-[18px] lg:leading-[33px] font-jost text-text-blue pt-[5px] pb-[10px] font-semibold">
-            Síguenos en nuestras redes sociales
-          </p>
-          <div className="flex gap-5">
-            <a
-              href="https://www.facebook.com/share/Sn1DgXgwqLP2y9K7/?mibextid=qi2Omg"
-              target="about_blank"
-            >
-              <FaFacebookSquare className="text-text-blue text-4xl" />
-            </a>
-            <a
-              href="https://www.instagram.com/tentacion.moda.intima?igsh=NG05NXVodTJkbTdx"
-              target="about_blank"
-            >
-              <FaSquareInstagram className="text-text-blue text-4xl" />
-            </a>
-            <a
-              href="https://www.tiktok.com/@tentacion.moda.int?_t=8mBapsxoREM&_r=1"
-              target="about_blank"
-            >
-              <Facebook />
-            </a>
+        <div className="flex flex-col gap-5 md:gap-[54px] items-center justify-center w-[260px] lg:w-full">
+          <div>
+            <p className="flex tracking-tight text-base lg:text-[18px] lg:leading-[33px] font-jost text-text-blue pt-[5px]  font-semibold">
+              Síguenos en nuestras redes sociales
+            </p>
           </div>
-          <img src="public/payment.webp" alt="logo-payment" />
+
+          <div className="flex flex-col lg:flex-row gap-5 items-center justify-center">
+            <div className="flex gap-4">
+              <a
+                href="https://www.facebook.com/share/Sn1DgXgwqLP2y9K7/?mibextid=qi2Omg"
+                target="about_blank"
+              >
+                <FaFacebookSquare className="text-text-blue text-4xl" />
+              </a>
+              <a
+                href="https://www.instagram.com/tentacion.moda.intima?igsh=NG05NXVodTJkbTdx"
+                target="about_blank"
+              >
+                <FaSquareInstagram className="text-text-blue text-4xl" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@tentacion.moda.int?_t=8mBapsxoREM&_r=1"
+                target="about_blank"
+              >
+                <Facebook />
+              </a>
+            </div>
+            <img src="public/payment.webp" alt="logo-payment" />
+          </div>
         </div>
       </div>
     </footer>
