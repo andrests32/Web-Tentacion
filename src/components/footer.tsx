@@ -21,9 +21,9 @@ const Footer = () => {
           <h5 className="text-text-blue font-dm text-[22px] lg:text-[25px] leading-loose">
             Tienda
           </h5>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
             <p className="tracking-tight text-base lg:text-[16px] lg:leading-[33px] font-jost text-text-blue">
-              Urb. Enrique López Albujar Mz M L18 - Primera etapa- Sullana,
+              Urb. Enrique López Albujar - Primera etapa- Sullana,
               Piura
             </p>
 
@@ -50,12 +50,13 @@ const Footer = () => {
 
         <div>
           <h5 className="text-text-blue font-dm text-[22px] lg:text-[25px] leading-loose">
-            Costos y Tiempos de Envíos
+            Tiempos de Envíos
           </h5>
 
-          <p className="tracking-tight text-base lg:text-[16px] lg:leading-[33px] font-jost text-text-blue">
-            Retiro en tienda S/.0 Lima Metropolitana S/.12-15. 1-3 dias hábiles
-            Provincias S/.20-25 2-7 dias habiles
+          <p className="tracking-tight text-base lg:text-[16px] lg:leading-[33px] font-jost text-text-blue flex flex-col">
+            <span>Retiro en tienda - Sullana </span>
+            <span>Provincia (12 a 24h)</span>
+            <span>Lima Metropolitana (4 a 5 días hábiles)</span>
           </p>
         </div>
 
@@ -76,9 +77,8 @@ const Footer = () => {
         </div>
 
         <div className="col-span-1 md:col-span-2 flex flex-col justify-evenly items-center lg:mr-20 md:mr-30">
-          <p className="tracking-tight text-base lg:text-[20px] md:text-[18px]  lg:leading-[33px] font-jost text-text-blue pt-[18px] pb-[33px]">
-            No se aceptan devoluciones, ya que las prendas son de uso íntimo.
-            Somos comprometidos con brindar un servicio de calidad.
+          <p className="tracking-tight text-base lg:text-[20px] md:text-[18px] lg:leading-[33px] font-jost text-text-blue pt-[18px] pb-[33px] font-semibold">
+            No se aceptan cambios ni devoluciones, por ser prendas intimas.
           </p>
         </div>
         <div className="flex flex-col gap-5 md:gap-[54px] items-center justify-center w-[260px] lg:w-full">
