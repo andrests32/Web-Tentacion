@@ -13,7 +13,6 @@ module.exports = {
         about: "url('public/Banner-Bikini.jpg')",
         services: "url('public/Banner-Lenceria.jpg')",
         contact: "url('public/Banner-Disfraces.jpg')",
-          "gray-200": "#4D5053",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
