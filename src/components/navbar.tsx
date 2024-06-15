@@ -13,7 +13,7 @@ const Navbar = () => {
     <div className="max-w-[1200px] px-0 xl:px-10 m-auto w-full py-0 flex justify-between items-center"> 
       <a href="/">
         {" "}
-        <img src="public/logo-tentacion.png" className="w-40 lg:w-80 h-30 bg-center bg-cover" />
+        <img src="./public/logonavtentacion.png" className="w-40 lg:w-80 h-30 bg-center bg-cover" />
       </a>
 
       {/* Nav List for Desktop */}
