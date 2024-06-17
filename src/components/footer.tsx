@@ -109,7 +109,7 @@ const Footer = () => {
                 <Facebook />
               </a>
             </div>
-            <img src="public/payment.webp" alt="logo-payment" />
+            <img src="/public/icons/logopayment.webp" alt="logo-payment" />
           </div>
         </div>
       </div>
