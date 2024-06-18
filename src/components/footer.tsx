@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="w-full">
       <div className="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pb-[100px]  flex flex-col items-center justify-center">
-        <img src="public/Camion de entrega.png" alt="" className="w-40 h-40" />
+        <img src="/public/icons/icotrucksend.png" alt="" className="w-40 h-40" />
         <p className="text-base font-semibold md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">
           ¡ESPERA TU PEDIDO!
         </p>

@@ -9,13 +9,21 @@ import netlify from '@astrojs/netlify';
 
 export default defineConfig({
   integrations: [tailwind(), react()],
-  output: 'server',
+  output: "server",
   adapter: netlify({
     edgeMiddleware: true
   }),
   build: {
     rollupOptions: {
-      external: ['sharp'], // Add 'sharp' to the external list
-    },
+      external: ["sharp"] // Add 'sharp' to the external list
+    }
   },
+  // image: {
+  //   service: {
+  //     entrypoint: "/public",
+  //     config: {
+  //       limitInputPixels: false
+  //     }
+  //   }
+  // }
 });
