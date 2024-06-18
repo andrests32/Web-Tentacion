@@ -1,7 +1,9 @@
 # build output
-dist/
+# dist/
+.vscode
 # generated types
 .astro/
+# .netlify
 
 # dependencies
 node_modules/
@@ -21,4 +23,5 @@ pnpm-debug.log*
 .DS_Store
 
 .vercel
-.netlify/functions-internal
+
+
