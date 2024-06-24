@@ -1,12 +1,12 @@
 /* empty css                           */import { f as createComponent, r as renderTemplate, i as renderComponent, m as maybeRenderHead, g as addAttribute } from '../astro_852d4028.mjs';
 import 'html-escaper';
-import { $ as $$MainLayout } from './about_250f81ea.mjs';
+import { $ as $$MainLayout } from './about_4464f30f.mjs';
 import { LuShoppingCart } from 'react-icons/lu';
 /* empty css                             */
 const $$Contact = createComponent(($$result, $$props, $$slots) => {
   const services = [
     {
-      img: "/public/Disfraces/disfraces1.png",
+      img: "../assets/Disfraces/disfraces1.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -14,7 +14,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/5925680704222638/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces2.png",
+      img: "../assets/Disfraces/disfraces2.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -22,7 +22,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7753371591389103/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces3.png",
+      img: "../assets/Disfraces/disfraces3.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -30,7 +30,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/8258166680863090/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces4.png",
+      img: "../assets/Disfraces/disfraces4.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -38,7 +38,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7839920059381146/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces5.png",
+      img: "../assets/Disfraces/disfraces5.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -46,7 +46,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7541552422589709/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces6.png",
+      img: "../assets/Disfraces/disfraces6.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -54,7 +54,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7441217375991080/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces7.png",
+      img: "../assets/Disfraces/disfraces7.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -62,7 +62,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7719441081458547/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces8.png",
+      img: "../assets/Disfraces/disfraces8.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -70,7 +70,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7904633602927253/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces9.png",
+      img: "../assets/Disfraces/disfraces9.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -78,7 +78,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7318488944946477/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces10.png",
+      img: "../assets/Disfraces/disfraces10.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -86,7 +86,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/7590430294327896/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces11.png",
+      img: "../assets/Disfraces/disfraces11.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",
@@ -94,7 +94,7 @@ const $$Contact = createComponent(($$result, $$props, $$slots) => {
       link: "https://wa.me/p/26230782623175645/51965793184"
     },
     {
-      img: "/public/Disfraces/disfraces12.png",
+      img: "../assets/Disfraces/disfraces12.png",
       title: "Tallas",
       text: "M - L",
       priceIco: "/public/icons/icoprice.png",

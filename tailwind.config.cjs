@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        body: "url(public/bg-beso-principal.png)",
-        hero: "url('')",
-        main: "url('/Background.jpg')",
-        about: "url('public/Banner-Bikini.jpg')",
-        services: "url('public/Banner-Lenceria.jpg')",
-        contact: "url('public/Banner-Disfraces.jpg')",
+        // body: "url(public/bg-beso-principal.png)",
+        // hero: "url('')",
+        // main: "url('/Background.jpg')",
+        about: "url('/public/bannerbikini.jpg')",
+        services: "url('/public/bannerlenceria.jpg')",
+        contact: "url('/public/bannerdisfraces.jpg')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],

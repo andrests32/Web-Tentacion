@@ -1,6 +1,6 @@
-/* empty css                           */import { f as createComponent, r as renderTemplate, i as renderComponent, m as maybeRenderHead, g as addAttribute } from '../astro_592235c1.mjs';
+/* empty css                           */import { f as createComponent, r as renderTemplate, i as renderComponent, m as maybeRenderHead, g as addAttribute } from '../astro_852d4028.mjs';
 import 'html-escaper';
-import { $ as $$MainLayout } from './about_5b33c721.mjs';
+import { $ as $$MainLayout } from './about_4464f30f.mjs';
 import { LuShoppingCart } from 'react-icons/lu';
 /* empty css                              */
 const $$Services = createComponent(($$result, $$props, $$slots) => {
@@ -9,7 +9,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria1.png",
       title: "Tallas",
       text: "XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7784356251586987/51965793184"
     },
@@ -17,7 +17,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria2.png",
       title: "Tallas",
       text: "XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/26029442286640068/51965793184"
     },
@@ -25,7 +25,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria3.png",
       title: "Tallas",
       text: "XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7308207842621481/51965793184"
     },
@@ -33,7 +33,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria4.png",
       title: "Tallas",
       text: "XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/5918465001611057/51965793184"
     },
@@ -41,7 +41,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria6.png",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25672142962400834/51965793184"
     },
@@ -49,7 +49,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria7.png",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7469745189804913/51965793184"
     },
@@ -57,7 +57,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria8.png",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7915804958471741/51965793184"
     },
@@ -65,7 +65,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria9.png",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7880894768640617/51965793184"
     },
@@ -73,7 +73,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria10.png",
       title: "Tallas",
       text: "L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "89.00",
       link: "https://wa.me/p/6984725961627273/51965793184"
     },
@@ -81,7 +81,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria11.png",
       title: "Tallas",
       text: "M",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7633383696695070/51965793184"
     },
@@ -89,7 +89,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria12.png",
       title: "Tallas",
       text: "L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7786502874703151/51965793184"
     },
@@ -97,7 +97,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria13.png",
       title: "Tallas",
       text: "M",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/26392052623715294/51965793184"
     },
@@ -105,7 +105,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria14.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25981166638164451/51965793184"
     },
@@ -113,7 +113,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria15.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7984840838201141/51965793184"
     },
@@ -121,7 +121,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria16.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7505552006210578/51965793184"
     },
@@ -129,7 +129,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria17.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7339044639539528/51965793184"
     },
@@ -137,7 +137,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria18.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7544588005630386/51965793184"
     },
@@ -145,7 +145,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria19.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "89.00",
       link: "https://wa.me/p/7581979741885444/51965793184"
     },
@@ -153,7 +153,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria20.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7919880511365574/51965793184"
     },
@@ -161,7 +161,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria21.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7610863242360319/51965793184"
     },
@@ -169,7 +169,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria22.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "68.00",
       link: "https://wa.me/p/7653837281375192/51965793184"
     },
@@ -177,7 +177,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria23.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "90.00",
       link: "https://wa.me/p/25613823791596263/51965793184"
     },
@@ -185,7 +185,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria24.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25966208929631020/51965793184"
     },
@@ -193,7 +193,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria25.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7700054956726390/51965793184"
     },
@@ -201,7 +201,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria26.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7552643361518559/51965793184"
     },
@@ -209,7 +209,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria27.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25657128343934527/51965793184"
     },
@@ -217,7 +217,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria28.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "89.00",
       link: "https://wa.me/p/26528743486725013/51965793184"
     },
@@ -225,7 +225,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria29.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/25626515090297795/51965793184"
     },
@@ -233,7 +233,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria30.png",
       title: "Tallas",
       text: "M",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7920616577972165/51965793184"
     },
@@ -241,7 +241,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria31.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7479384742160007/51965793184"
     },
@@ -249,7 +249,7 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria32.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25629965949984106/51965793184"
     },
@@ -257,185 +257,185 @@ const $$Services = createComponent(($$result, $$props, $$slots) => {
       img: "/public/Lenceria/lenceria33.png",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/6910363449066639/51965793184"
     },
     // Lenceria segundo bloque de imagenes..
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.20 (1).jpeg",
+      img: "/public/Lenceria2/lenceriac1.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7552643361518559/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.21 (2).jpeg",
+      img: "/public/Lenceria2/lenceriac2.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "74.90",
       link: "https://wa.me/p/7346814882100249/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.24.jpeg",
+      img: "/public/Lenceria2/lenceriac3.jpeg",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7393860197408237/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.25.jpeg",
+      img: "/public/Lenceria2/lenceriac4.jpeg",
       title: "Tallas",
       text: "M - L - XL - XXL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7441688499283271/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.26 (1).jpeg",
+      img: "/public/Lenceria2/lenceriac5.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "89.00",
       link: "https://wa.me/p/7602388143186411/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27 (3).jpeg",
+      img: "/public/Lenceria2/lenceriac6.jpeg",
       title: "Tallas",
       text: "M - L - XL - XXL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7602388143186411/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.27.jpeg",
+      img: "/public/Lenceria2/lenceriac7.jpeg",
       title: "Tallas",
       text: "M - L - XL - XXL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "69.00",
       link: "https://wa.me/p/7777069379020343/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.29.jpeg",
+      img: "/public/Lenceria2/lenceriac8.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7694676140616639/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.30 (1).jpeg",
+      img: "/public/Lenceria2/lenceriac9.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7698220516912366/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.30 (2).jpeg",
+      img: "/public/Lenceria2/lenceriac10.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7692002770861452/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.31.jpeg",
+      img: "/public/Lenceria2/lenceriac11.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7767188780038416/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.32 (3).jpeg",
+      img: "/public/Lenceria2/lenceriac12.jpeg",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7681731018541327/51965793184"
     },
     {
-      img: "public/Lenceria2/WhatsApp Image 2024-06-03 at 21.17.33.jpeg",
+      img: "/public/Lenceria2/lenceriac13.jpeg",
       title: "Tallas",
       text: "M - L - XL",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "75.00",
       link: "https://wa.me/p/7578756468881680/51965793184"
     },
     // Lenceria 3
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 21.19.21 (1).jpeg",
+      img: "/public/Lenceria3/lenc1.jpeg",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "85.00",
       link: "https://wa.me/p/7390089424450390/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.10.20.jpeg",
+      img: "/public/Lenceria3/lenc2.jpeg",
       title: "Tallas",
       text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
-      price: "80.00",
-      link: "https://wa.me/p/8589869401028294/51965793184"
-    },
-    {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 21.19.25.jpeg",
-      title: "Tallas",
-      text: "M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7605916256189720/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.00.jpeg",
+      img: "/public/Lenceria3/lenc3.jpeg",
+      title: "Tallas",
+      text: "M - L",
+      priceIco: "/public/icons/icoprice.png",
+      price: "80.00",
+      link: "https://wa.me/p/8589869401028294/51965793184"
+    },
+    {
+      img: "/public/Lenceria3/lenc4.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "70.00",
       link: "https://wa.me/p/8493713563978164/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.01 (1).jpeg",
+      img: "/public/Lenceria3/lenc5.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7538987096220599/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.01 (2).jpeg",
+      img: "/public/Lenceria3/lenc6.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/8400155333333393/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.01 (3).jpeg",
+      img: "/public/Lenceria3/lenc7.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "65.00",
       link: "https://wa.me/p/7566286596787102/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.01 (4).jpeg",
+      img: "/public/Lenceria3/lenc8.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/7301640766630851/51965793184"
     },
     {
-      img: "public/Lenceria3/WhatsApp Image 2024-06-11 at 22.15.01.jpeg",
+      img: "/public/Lenceria3/lenc9.jpeg",
       title: "Tallas",
       text: "S - M - L",
-      priceIco: "src/icons/ico.Price.png",
+      priceIco: "/public/icons/icoprice.png",
       price: "80.00",
       link: "https://wa.me/p/25587868290861270/51965793184"
     }

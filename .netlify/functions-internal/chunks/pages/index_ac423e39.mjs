@@ -1,6 +1,6 @@
 /* empty css                           */import { f as createComponent, r as renderTemplate, i as renderComponent, m as maybeRenderHead, g as addAttribute } from '../astro_852d4028.mjs';
 import 'html-escaper';
-import { $ as $$MainLayout } from './about_250f81ea.mjs';
+import { $ as $$MainLayout } from './about_4464f30f.mjs';
 import { jsx, jsxs } from 'react/jsx-runtime';
 import { CgChevronRight, CgChevronLeft } from 'react-icons/cg';
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
@@ -121,23 +121,17 @@ const Button = (props) => {
 const $$Index = createComponent(($$result, $$props, $$slots) => {
   const reviews = [
     {
-      img: "./public/icons/icolenceria.png",
-      name: "Nattasha Mith",
-      review: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+      img: "./public/icons/icolenceria.png"
     }
   ];
   const bikini = [
     {
-      img: "./public/icons/icobikinis.png",
-      name: "Nattasha Mith",
-      review: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+      img: "./public/icons/icobikinis.png"
     }
   ];
   const disfraces = [
     {
-      img: "./public/icons/icolenceria.png",
-      name: "Nattasha Mith",
-      review: "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been."
+      img: "./public/icons/icolenceria.png"
     }
   ];
   const clientLogos = [
