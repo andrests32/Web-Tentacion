@@ -10,9 +10,9 @@ module.exports = {
         body: "url('/public/logonavtentacion.png')",
         // hero: "url('')",
         // main: "url('/Background.jpg')",
-        about: "url('/public/bannerbikini.jpg')",
-        services: "url('/public/bannerlenceria.jpg')",
-        contact: "url('/public/bannerdisfraces.jpg')",
+        about: "url('/bannerbikini.jpg')",
+        services: "url('/bannerlenceria.jpg')",
+        contact: "url('/bannerdisfraces.jpg')",
       },
       fontFamily: {
         dm: ["DM Serif Display", "serif"],
